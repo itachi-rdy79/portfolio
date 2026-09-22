@@ -32,10 +32,10 @@ This portfolio features an ultra-modern **Liquid Glass (Glassmorphism 2.0)** vis
 
 ### 4. Real-World Featured Repositories
 - **[AIML Infra Lab](https://github.com/itachi-rdy79/aiml-infra-lab)**: Production AI/ML platform featuring continuous model training, 2D SVD semantic embeddings, real-time FastAPI inference, Prometheus metrics exporter, Docker containers, Kubernetes HPA, and AWS ECS Fargate Terraform IaC.
-- **[Terraform Zero to Hero](https://github.com/itachi-rdy79/terraform-zero-to-hero)**: Enterprise cloud infrastructure automation on AWS provisioning multi-AZ VPC architectures, subnets, NAT gateways, Auto Scaling Groups, HashiCorp Vault secrets, and DynamoDB-locked S3 remote state.
+- **[AIOps Anomaly Detector](https://github.com/itachi-rdy79/aiops-anomaly-detector)**: Autonomous SRE and predictive telemetry engine for 200+ microservices using unsupervised Isolation Forest ML in Python, Prometheus metric streams, sub-5ms anomaly inference, and automated Kubernetes remediation.
+- **[Enterprise GitOps Platform](https://github.com/itachi-rdy79/argo-gitops-platform)**: Multi-cluster delivery on AWS EKS via ArgoCD App-of-Apps and canary rollouts, with automated SOC 2 compliance-as-code enforced by OPA Gatekeeper policies and Trivy vulnerability gates.
 - **[GAP Arcade (tictactoe)](https://github.com/itachi-rdy79/tictactoe)**: Production web platform with 5-phase DevOps automation: non-root hardened Docker (<25MB), GitHub Actions CI with Trivy security scans, AWS EC2 Terraform IaC, Kubernetes LoadBalancer manifests, and k6 load testing.
 - **[WAPH Security Suite](https://github.com/itachi-rdy79/waph-team21.github.io)**: Web application penetration testing, OWASP Top 10 defenses, XSS sanitization, and secure authentication architecture developed at University of Cincinnati.
-- **[Supplement Tracker](https://github.com/itachi-rdy79/supplement-tracker)**: Responsive wellness intelligence web app with nutrient synergy calculation, dosage compliance tracking, and clean data modeling.
 
 ### 5. Proven Enterprise Experience
 - **Shopify &mdash; DevOps Engineer (AI & ML)** [Remote USA] (August 2024 &ndash; Present)
