@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chimalamarri Purna Lokesh Reddy | Cloud, DevOps & MLOps Engineer</title>
+  <meta name="description" content="Portfolio of Chimalamarri Purna Lokesh Reddy — Cloud, DevOps & MLOps Engineer specializing in AWS Infrastructure as Code, Kubernetes orchestration, end-to-end MLOps pipelines, and high-concurrency microservices.">
+  <meta name="keywords" content="Purna Lokesh, DevOps Engineer, MLOps Engineer, Cloud Infrastructure, AWS, Kubernetes, Terraform, Docker, Machine Learning, itachi-rdy79">
+  <meta name="author" content="Chimalamarri Purna Lokesh Reddy">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:title" content="Chimalamarri Purna Lokesh Reddy | Cloud, DevOps & MLOps Engineer">
+  <meta property="og:description" content="Production Cloud Infrastructure, Terraform IaC, Kubernetes HPA, and End-to-End MLOps Platforms.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/itachi-rdy79/portfolio">
+
+  <!-- Fonts & Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Floating Island Navigation Header -->
+  <header class="nav-header">
+    <nav class="nav-island">
+      <a href="#home" class="nav-brand">
+        <span class="brand-dot"></span>
+        <span>Lokesh Reddy<span style="color:var(--cyan)">.dev</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#terminal" class="nav-link">Terminal</a></li>
+        <li><a href="#mlops" class="nav-link">MLOps Sandbox</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <button id="openResumeBtn" class="btn-nav-primary">
+          <i data-lucide="file-text" style="width:16px; height:16px;"></i>
+          <span>View Resume</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="status-indicator"></span>
+            <span>Available for Cloud, DevOps & MLOps Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting Scalable <span class="gradient-text-cyan">Cloud Infrastructure</span> & Production <span class="gradient-text-cyan">MLOps Systems</span>
+          </h1>
+
+          <div class="hero-role">
+            Chimalamarri Purna Lokesh Reddy &middot; Cloud &amp; MLOps Engineer
+          </div>
+
+          <p class="hero-description">
+            Specializing in production-grade <strong>AWS Infrastructure as Code (Terraform)</strong>, <strong>Kubernetes HPA autoscaling</strong>, multi-stage <strong>Docker containerization</strong>, and automated <strong>MLOps pipelines</strong> with real-time inference telemetry and drift detection.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <i data-lucide="layers" style="width:18px; height:18px;"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#terminal" class="btn-secondary">
+              <i data-lucide="terminal" style="width:18px; height:18px;"></i>
+              <span>Launch Terminal CLI</span>
+            </a>
+            <button id="heroResumeBtn" class="btn-secondary">
+              <i data-lucide="download" style="width:18px; height:18px;"></i>
+              <span>Resume PDF</span>
+            </button>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h3 id="statPipelines">5+</h3>
+              <p>Production Pipelines</p>
+            </div>
+            <div class="stat-item">
+              <h3>99.9%</h3>
+              <p>Uptime Architecture</p>
+            </div>
+            <div class="stat-item">
+              <h3>&lt; 15ms</h3>
+              <p>Target Latency</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Terminal Simulator -->
+        <div id="terminal" class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">lokesh@nexus-cluster:~ (bash)</div>
+            <span class="terminal-badge">LIVE CLI</span>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div class="terminal-log">
+              <div class="cmd-output output-cyan">
+NexusML Cloud & DevOps Workstation v2.4.0
+Type 'help' to inspect available system commands.
+              </div>
+            </div>
+            <div class="cmd-line">
+              <span class="prompt">lokesh@nexus:~$</span>
+              <span class="cmd-text">nexusml status</span>
+            </div>
+            <div class="cmd-output output-emerald">
+[OK] API Inference Engine: HEALTHY (FastAPI / Uvicorn)
+[OK] Active Models: LogisticRegression, RandomForest, NeuralNet
+[OK] Prometheus Exporter: Active on :8000/metrics
+[OK] Cluster Orchestration: AWS ECS / Kubernetes HPA Enabled
+            </div>
+            <div class="terminal-input-wrap">
+              <span class="prompt">lokesh@nexus:~$</span>
+              <input type="text" id="terminalInput" class="terminal-input" placeholder="Type a command (e.g. cat resume, help, kubectl)..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+
+          <div class="terminal-chips">
+            <span class="terminal-chip" data-cmd="help">help</span>
+            <span class="terminal-chip" data-cmd="cat resume">cat resume</span>
+            <span class="terminal-chip" data-cmd="kubectl get pods -A">kubectl get pods</span>
+            <span class="terminal-chip" data-cmd="terraform plan">terraform plan</span>
+            <span class="terminal-chip" data-cmd="docker ps">docker ps</span>
+            <span class="terminal-chip" data-cmd="curl /metrics">curl /metrics</span>
+            <span class="terminal-chip" data-cmd="clear">clear</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive MLOps Sandbox Section (NexusML Demonstration) -->
+  <section id="mlops" class="mlops-sandbox-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i data-lucide="cpu" style="width:14px; height:14px; margin-right:4px;"></i> Interactive Machine Learning</span>
+        <h2 class="section-title">NexusML Decision Boundary Sandbox</h2>
+        <p class="section-subtitle">
+          Experience real-time MLOps model evaluation. Switch synthetic dataset topologies and machine learning classifiers to visualize dynamic mathematical decision boundaries and test inference points.
+        </p>
+      </div>
+
+      <div class="sandbox-card">
+        <div class="sandbox-grid">
+          <div class="canvas-container">
+            <canvas id="decisionBoundaryCanvas" width="600" height="380"></canvas>
+            <div class="canvas-overlay-tip">
+              <i data-lucide="mouse-pointer" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i>
+              Click anywhere on the canvas to test live classification
+            </div>
+          </div>
+
+          <div class="sandbox-controls">
+            <div class="control-group">
+              <label class="control-label">Synthetic Dataset</label>
+              <div class="segmented-pills">
+                <button class="pill-btn dataset-btn active" data-dataset="moons">Moons</button>
+                <button class="pill-btn dataset-btn" data-dataset="circles">Circles</button>
+                <button class="pill-btn dataset-btn" data-dataset="linear">Linear</button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">ML Classifier Architecture</label>
+              <div class="segmented-pills">
+                <button class="pill-btn model-btn active" data-model="neural_net">Neural Net</button>
+                <button class="pill-btn model-btn" data-model="random_forest">Random Forest</button>
+                <button class="pill-btn model-btn" data-model="logistic">Logistic Reg</button>
+              </div>
+            </div>
+
+            <div class="sandbox-metrics-box">
+              <div class="metric-mini accent-cyan">
+                <span>Model Accuracy</span>
+                <strong id="metricAccuracy">96.8%</strong>
+              </div>
+              <div class="metric-mini accent-emerald">
+                <span>Inference Latency</span>
+                <strong id="metricLatency">4.2 ms</strong>
+              </div>
+              <div class="metric-mini">
+                <span>Drift Status</span>
+                <strong style="color:var(--emerald);">HEALTHY</strong>
+              </div>
+              <div class="metric-mini">
+                <span>Active Replicas</span>
+                <strong id="metricReplicas">3 Pods</strong>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">Latest Point Prediction</label>
+              <div id="inferenceResultBadge" style="padding:10px 14px; background:rgba(255,255,255,0.04); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
+                Click canvas to classify coordinates (X₁, X₂)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DevOps & MLOps Pipeline Architecture Section -->
+  <section id="architecture" class="arch-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i data-lucide="git-branch" style="width:14px; height:14px; margin-right:4px;"></i> Infrastructure Lifecycle</span>
+        <h2 class="section-title">Automated Production MLOps Pipeline</h2>
+        <p class="section-subtitle">
+          From git commit to zero-downtime containerized deployment across AWS ECS and Kubernetes clusters with real-time telemetry.
+        </p>
+      </div>
+
+      <div class="pipeline-diagram">
+        <div class="pipe-step">
+          <div class="pipe-icon-wrap"><i data-lucide="git-commit"></i></div>
+          <h4>1. Code & Model</h4>
+          <p>Version-controlled training pipelines &amp; dataset snapshots.</p>
+          <span class="pipe-tag">Git &bull; Scikit-Learn</span>
+        </div>
+
+        <div class="pipe-step">
+          <div class="pipe-icon-wrap"><i data-lucide="shield-check"></i></div>
+          <h4>2. Quality Gate CI</h4>
+          <p>Automated regression tests, data drift checks, &amp; accuracy gates.</p>
+          <span class="pipe-tag">GitHub Actions &bull; Pytest</span>
+        </div>
+
+        <div class="pipe-step">
+          <div class="pipe-icon-wrap"><i data-lucide="box"></i></div>
+          <h4>3. Multi-Stage Build</h4>
+          <p>Lean, vulnerability-scanned Docker container artifacts.</p>
+          <span class="pipe-tag">Docker &bull; AWS ECR</span>
+        </div>
+
+        <div class="pipe-step">
+          <div class="pipe-icon-wrap"><i data-lucide="cloud"></i></div>
+          <h4>4. IaC Orchestration</h4>
+          <p>Declarative multi-tier VPC, ECS Fargate, &amp; Kubernetes HPA.</p>
+          <span class="pipe-tag">Terraform &bull; K8s</span>
+        </div>
+
+        <div class="pipe-step">
+          <div class="pipe-icon-wrap"><i data-lucide="activity"></i></div>
+          <h4>5. Observability</h4>
+          <p>Live metrics scraping, p99 latency alerts, &amp; service dashboards.</p>
+          <span class="pipe-tag">Prometheus &bull; Grafana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i data-lucide="folder-git-2" style="width:14px; height:14px; margin-right:4px;"></i> Portfolio Showcase</span>
+        <h2 class="section-title">Featured Engineering Projects</h2>
+        <p class="section-subtitle">
+          Real-world cloud infrastructure, distributed microservices, and end-to-end MLOps platforms deployed to GitHub and cloud environments.
+        </p>
+      </div>
+
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="mlops">MLOps &amp; AI</button>
+        <button class="filter-btn" data-filter="devops">Cloud &amp; DevOps</button>
+        <button class="filter-btn" data-filter="fullstack">Microservices</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: NexusML -->
+        <article class="project-card" data-category="mlops devops">
+          <span class="project-badge-top">PRODUCTION MLOPS</span>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <i data-lucide="cpu"></i>
+            </div>
+            <h3 class="project-title">NexusML &mdash; Production MLOps &amp; Infra Lab</h3>
+            <p class="project-desc">
+              End-to-end production AI/ML platform featuring continuous model training with 2D decision boundary meshes, a semantic vector engine with 2D SVD projections, real-time FastAPI inference engine, Prometheus metrics scrape exporter, Docker multi-stage containers, Kubernetes HPA horizontal pod autoscaling, and complete AWS ECS Fargate Terraform IaC.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Kubernetes HPA</span>
+              <span class="tech-tag">AWS ECS (Terraform)</span>
+              <span class="tech-tag">Prometheus</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="https://github.com/itachi-rdy79/aiml-infra-lab" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i data-lucide="github" style="width:16px; height:16px;"></i>
+                <span>Source Code</span>
+              </a>
+              <a href="#mlops" class="project-link-btn" style="color:var(--cyan);">
+                <i data-lucide="play-circle" style="width:16px; height:16px;"></i>
+                <span>Live Interactive Sandbox</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Terraform Zero to Hero -->
+        <article class="project-card" data-category="devops">
+          <span class="project-badge-top">CLOUD INFRASTRUCTURE</span>
+          <div class="project-card-header">
+            <div class="project-icon-box violet">
+              <i data-lucide="cloud"></i>
+            </div>
+            <h3 class="project-title">Terraform Zero to Hero &mdash; Enterprise AWS IaC</h3>
+            <p class="project-desc">
+              Comprehensive enterprise cloud infrastructure automation on AWS. Provisions multi-AZ VPC architectures, private/public subnets, NAT gateways, Auto Scaling Groups, HashiCorp Vault secrets integration, and robust remote state locking with S3 buckets and DynamoDB.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Terraform</span>
+              <span class="tech-tag">AWS VPC</span>
+              <span class="tech-tag">Auto Scaling</span>
+              <span class="tech-tag">HashiCorp Vault</span>
+              <span class="tech-tag">S3 Remote State</span>
+              <span class="tech-tag">DynamoDB Locking</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="https://github.com/itachi-rdy79/terraform-zero-to-hero" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i data-lucide="github" style="width:16px; height:16px;"></i>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: High-Concurrency Microservices (Gap Arcade) -->
+        <article class="project-card" data-category="devops fullstack">
+          <span class="project-badge-top">DEVOPS &amp; RELIABILITY</span>
+          <div class="project-card-header">
+            <div class="project-icon-box emerald">
+              <i data-lucide="server"></i>
+            </div>
+            <h3 class="project-title">Distributed Microservices &amp; Concurrency Suite</h3>
+            <p class="project-desc">
+              High-concurrency containerized web application equipped with automated k6 load testing scripts (benchmarking 500+ virtual users), custom Nginx reverse proxy routing, Prometheus monitoring configuration, and Kubernetes manifests with zero-downtime rolling updates.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">Docker Compose</span>
+              <span class="tech-tag">Nginx Reverse Proxy</span>
+              <span class="tech-tag">k6 Load Testing</span>
+              <span class="tech-tag">Prometheus</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="https://github.com/itachi-rdy79/tictactoe" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i data-lucide="github" style="width:16px; height:16px;"></i>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Driver Drowsiness Monitoring AI -->
+        <article class="project-card" data-category="mlops">
+          <span class="project-badge-top">COMPUTER VISION &amp; ML</span>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <i data-lucide="eye"></i>
+            </div>
+            <h3 class="project-title">Real-Time Driver Drowsiness Detection System</h3>
+            <p class="project-desc">
+              Major machine learning &amp; computer vision surveillance system designed to detect driver fatigue in real time. Analyzes facial landmarks, Eye Aspect Ratio (EAR), head pose orientation, and behavioral movements to trigger instant acoustic safety alarms.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Real-Time Alerts</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-links">
+              <span class="project-link-btn" style="color:var(--text-dim); cursor:default;">
+                <i data-lucide="check-circle" style="width:16px; height:16px; color:var(--emerald);"></i>
+                <span>Verified Major Engineering Project</span>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Supplement & Bio-Metric Analytics -->
+        <article class="project-card" data-category="fullstack">
+          <span class="project-badge-top">FULL-STACK DATA</span>
+          <div class="project-card-header">
+            <div class="project-icon-box violet">
+              <i data-lucide="activity"></i>
+            </div>
+            <h3 class="project-title">Bio-Metric Analytics &amp; Regimen Intelligence</h3>
+            <p class="project-desc">
+              Health analytics and schedule optimization platform built to calculate nutrient synergies, manage dosage compliance, and visualize wellness metrics through responsive charting.
+            </p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">Analytics Engine</span>
+              <span class="tech-tag">Responsive UI</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="https://github.com/itachi-rdy79/supplement-tracker" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <i data-lucide="github" style="width:16px; height:16px;"></i>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i data-lucide="code-2" style="width:14px; height:14px; margin-right:4px;"></i> Core Competencies</span>
+        <h2 class="section-title">Technical Skill Matrix</h2>
+        <p class="section-subtitle">
+          Hands-on proficiency across cloud orchestration, infrastructure automation, machine learning systems, and software engineering.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon" style="color:var(--cyan);"><i data-lucide="cloud"></i></span>
+            <h3 class="skill-cat-title">Cloud &amp; Orchestration</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <span>AWS (ECS, ECR, ALB, VPC, S3)</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Docker &amp; Multi-stage Builds</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:95%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Kubernetes (HPA, Services, Ingress)</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Nginx &amp; Reverse Proxies</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon" style="color:var(--violet);"><i data-lucide="layers"></i></span>
+            <h3 class="skill-cat-title">IaC &amp; CI/CD Automation</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <span>Terraform (Modules, Remote State)</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>GitHub Actions &amp; CI Quality Gates</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>HashiCorp Vault &amp; Secrets Management</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:85%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Linux Shell Scripting &amp; PowerShell</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:94%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon" style="color:var(--emerald);"><i data-lucide="cpu"></i></span>
+            <h3 class="skill-cat-title">MLOps &amp; AI Engineering</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <span>FastAPI &amp; RESTful Model Serving</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:94%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Scikit-Learn Training Pipelines</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:90%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Vector Embeddings &amp; 2D SVD Projections</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Model Drift &amp; Metric Telemetry</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:86%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="cat-icon" style="color:var(--amber);"><i data-lucide="terminal"></i></span>
+            <h3 class="skill-cat-title">Languages &amp; Observability</h3>
+          </div>
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <span>Python, Java, C, SQL</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:92%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Prometheus Telemetry &amp; Metrics</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:88%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>Grafana Dashboards</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:84%;"></div></div>
+            </div>
+            <div class="skill-item">
+              <span>k6 High-Concurrency Load Testing</span>
+              <div class="skill-bar-wrap"><div class="skill-bar-fill" style="width:87%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume, Education & Certifications Timeline -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag"><i data-lucide="award" style="width:14px; height:14px; margin-right:4px;"></i> Academic &amp; Industry Track</span>
+        <h2 class="section-title">Education &amp; Experience Timeline</h2>
+        <p class="section-subtitle">
+          Verified academic credentials, specialized certifications, and hands-on software engineering experience.
+        </p>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- Education Column -->
+        <div class="timeline-column">
+          <h3><i data-lucide="graduation-cap" style="color:var(--cyan); width:20px; height:20px;"></i> Formal Education</h3>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-period">2019 &mdash; 2023</div>
+              <h4 class="timeline-title">B.Tech in Information Technology</h4>
+              <p class="timeline-sub">Tirumala Engineering College &bull; JNTU Kakinada</p>
+              <p class="timeline-desc">Graduated with 7.5 CGPA. Focused on Computer Networks, Distributed Systems, Operating Systems, Machine Learning, and Software Architecture.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-period">2017 &mdash; 2019</div>
+              <h4 class="timeline-title">Intermediate (MPC)</h4>
+              <p class="timeline-sub">Sri Chaitanya Junior College, Guntur</p>
+              <p class="timeline-desc">Graduated with exceptional 9.76 CGPA in Mathematics, Physics, and Chemistry foundations.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-period">2017</div>
+              <h4 class="timeline-title">Secondary School Certificate (SSC)</h4>
+              <p class="timeline-sub">Scholars High School</p>
+              <p class="timeline-desc">Graduated with a perfect 10.0 CGPA score.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience & Certifications Column -->
+        <div class="timeline-column">
+          <h3><i data-lucide="briefcase" style="color:var(--violet); width:20px; height:20px;"></i> Experience &amp; Certifications</h3>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <span class="timeline-dot" style="border-color:var(--violet); box-shadow:0 0 8px var(--violet);"></span>
+              <div class="timeline-period">Industry Experience</div>
+              <h4 class="timeline-title">Software Engineering Virtual Experience</h4>
+              <p class="timeline-sub">JPMorgan Chase &amp; Co.</p>
+              <p class="timeline-desc">Interface financial data feeds, implement real-time streaming market stock visualizers, and utilize Perspective open-source data charting libraries.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot" style="border-color:var(--violet); box-shadow:0 0 8px var(--violet);"></span>
+              <div class="timeline-period">Certification</div>
+              <h4 class="timeline-title">Ethical Hacking Certification</h4>
+              <p class="timeline-sub">IIT Kharagpur</p>
+              <p class="timeline-desc">Comprehensive training in security penetration testing, network reconnaissance, cryptographic protocols, and secure system defenses.</p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-dot" style="border-color:var(--violet); box-shadow:0 0 8px var(--violet);"></span>
+              <div class="timeline-period">Technical Workshop</div>
+              <h4 class="timeline-title">Advanced Python Development</h4>
+              <p class="timeline-sub">APSSDC (Andhra Pradesh State Skill Development Corporation)</p>
+              <p class="timeline-desc">Hands-on algorithmic problem solving, backend API development, and data manipulation libraries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Connect Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <h2 class="contact-title">Let's Build Resilient Systems Together</h2>
+        <p class="contact-desc">
+          Actively exploring Cloud Infrastructure, DevOps Engineering, and MLOps roles. Reach out directly or connect on GitHub.
+        </p>
+
+        <div class="contact-pills">
+          <a href="mailto:purnalokesh79@gmail.com" class="contact-pill" id="emailPill">
+            <i data-lucide="mail" style="color:var(--cyan); width:18px; height:18px;"></i>
+            <span>purnalokesh79@gmail.com</span>
+          </a>
+
+          <button id="copyEmailBtn" class="contact-pill" style="cursor:pointer; background:rgba(0,240,255,0.08); border-color:var(--border-focus);">
+            <i data-lucide="copy" style="width:16px; height:16px;"></i>
+            <span>Copy Email</span>
+          </button>
+
+          <a href="tel:+917993652001" class="contact-pill">
+            <i data-lucide="phone" style="color:var(--emerald); width:18px; height:18px;"></i>
+            <span>+91 7993652001</span>
+          </a>
+
+          <a href="https://github.com/itachi-rdy79" target="_blank" rel="noopener noreferrer" class="contact-pill">
+            <i data-lucide="github" style="color:var(--violet); width:18px; height:18px;"></i>
+            <span>github.com/itachi-rdy79</span>
+          </a>
+        </div>
+
+        <div>
+          <button id="footerResumeBtn" class="btn-primary" style="margin: 0 auto;">
+            <i data-lucide="file-down" style="width:18px; height:18px;"></i>
+            <span>View / Download Complete Resume PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Chimalamarri Purna Lokesh Reddy. Built for High-Availability Cloud &amp; MLOps Infrastructure.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <span id="toastMsg">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Resume PDF Preview Modal -->
+  <div id="resumeModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Chimalamarri Purna Lokesh Reddy &mdash; Curriculum Vitae</h3>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <a href="assets/Lokesh_Reddy_Resume.pdf" download="Purna_Lokesh_Reddy_Resume.pdf" class="btn-nav-primary" style="text-decoration:none;">
+            <i data-lucide="download" style="width:14px; height:14px;"></i>
+            <span>Download PDF</span>
+          </a>
+          <button id="closeModalBtn" class="modal-close-btn">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="assets/Lokesh_Reddy_Resume.pdf#toolbar=1" type="application/pdf"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logic Script -->
+  <script src="app.js"></script>
+</body>
+</html>
