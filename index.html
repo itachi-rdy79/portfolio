@@ -35,12 +35,11 @@
 
       <ul class="nav-links">
         <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#cluster" class="nav-link">EKS Topology</a></li>
-        <li><a href="#mlops" class="nav-link">MLOps Core</a></li>
         <li><a href="#architecture" class="nav-link">Architecture</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#terminal" class="nav-link">Terminal</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
@@ -80,9 +79,9 @@
               <i data-lucide="layers" style="width:18px; height:18px;"></i>
               <span>Explore Projects</span>
             </a>
-            <a href="#cluster" class="btn-secondary">
-              <i data-lucide="network" style="width:18px; height:18px;"></i>
-              <span>Live EKS Topology</span>
+            <a href="#terminal" class="btn-secondary">
+              <i data-lucide="terminal" style="width:18px; height:18px;"></i>
+              <span>Launch Terminal CLI</span>
             </a>
             <button id="heroResumeBtn" class="btn-secondary">
               <i data-lucide="download" style="width:18px; height:18px;"></i>
@@ -135,7 +134,7 @@ Name:     Purna Lokesh Reddy
 Title:    DevOps Engineer (AI &amp; ML)
 Location: Cincinnati, OH | Master's, University of Cincinnati (Dec 2024)
 Impact:   Shopify (EKS, SageMaker, A10G) &bull; Uber (300+ Microservices)
-Contact:  lokeshreddych129@gmail.com | 513-578-3720
+Contact:  purnalokesh79@gmail.com | 513-578-3720
             </div>
             <div class="terminal-input-wrap">
               <span class="prompt">lokesh@cincinnati:~$</span>
@@ -148,7 +147,6 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
             <span class="terminal-chip" data-cmd="cat resume">cat resume</span>
             <span class="terminal-chip" data-cmd="kubectl get pods -A">kubectl get pods</span>
             <span class="terminal-chip" data-cmd="terraform plan">terraform plan</span>
-            <span class="terminal-chip" data-cmd="eks scale 6">eks scale 6</span>
             <span class="terminal-chip" data-cmd="docker ps">docker ps</span>
             <span class="terminal-chip" data-cmd="curl /metrics">curl /metrics</span>
             <span class="terminal-chip" data-cmd="clear">clear</span>
@@ -217,123 +215,6 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
     </div>
   </section>
 
-  <!-- Interactive AWS EKS & GPU Cluster Topology Visualizer -->
-  <section id="cluster" class="cluster-section">
-    <div class="container">
-      <div class="section-head">
-        <span class="section-tag"><i data-lucide="network" style="width:14px; height:14px; margin-right:4px;"></i> Cluster Infrastructure</span>
-        <h2 class="section-title">AWS EKS &amp; NVIDIA GPU Cluster Topology</h2>
-        <p class="section-subtitle">
-          Interactive simulation of multi-region AWS EKS clusters. Adjust the GPU node pool slider to witness real-time pod autoscaling, latency drops, and FinOps cost modeling.
-        </p>
-      </div>
-
-      <div class="glass-panel cluster-card">
-        <div class="cluster-control-bar">
-          <div class="cluster-slider-wrap">
-            <span class="slider-label"><strong>GPU A10G Nodes:</strong> <span id="gpuNodeCountText" style="color:var(--cyan); font-weight:700;">4 Nodes</span></span>
-            <input type="range" id="gpuNodeSlider" class="liquid-slider" min="1" max="8" value="4">
-          </div>
-
-          <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
-            <div style="font-family:var(--font-mono); font-size:0.85rem;">
-              <span style="color:var(--text-dim);">P99 Latency:</span>
-              <strong id="clusterLatencyVal" style="color:var(--emerald); font-size:1.1rem; margin-left:6px;">14.2 ms</strong>
-            </div>
-            <div style="font-family:var(--font-mono); font-size:0.85rem;">
-              <span style="color:var(--text-dim);">Est. Cost:</span>
-              <strong id="clusterCostVal" style="color:var(--amber); font-size:1.1rem; margin-left:6px;">$4.08/hr</strong>
-            </div>
-            <div style="font-family:var(--font-mono); font-size:0.85rem;">
-              <span style="color:var(--text-dim);">Active Pods:</span>
-              <strong id="clusterPodsVal" style="color:var(--cyan); font-size:1.1rem; margin-left:6px;">16 Replicas</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="cluster-nodes-grid" id="clusterNodesGrid">
-          <!-- Dynamic EKS Node Cards injected via JS -->
-        </div>
-
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-family:var(--font-mono); font-size:0.8rem; color:var(--text-dim); padding-top:16px; border-top:1px solid var(--border-glass);">
-          <div><i data-lucide="shield" style="width:14px; height:14px; color:var(--emerald); display:inline-block; vertical-align:middle;"></i> OPA SOC 2 Enforced &bull; Trivy Scanned &bull; ArgoCD GitOps Synced</div>
-          <div>Region: <span style="color:var(--cyan);">us-east-1 (N. Virginia)</span> &bull; Kubernetes v1.30.2</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive MLOps Sandbox Section (NexusML Demonstration) -->
-  <section id="mlops" class="mlops-sandbox-section">
-    <div class="container">
-      <div class="section-head">
-        <span class="section-tag"><i data-lucide="cpu" style="width:14px; height:14px; margin-right:4px;"></i> Interactive Machine Learning</span>
-        <h2 class="section-title">Production MLOps Decision Boundary Sandbox</h2>
-        <p class="section-subtitle">
-          Experience real-time MLOps model evaluation. Switch synthetic dataset topologies and machine learning classifiers to visualize dynamic mathematical decision boundaries and test inference points.
-        </p>
-      </div>
-
-      <div class="glass-panel sandbox-card">
-        <div class="sandbox-grid">
-          <div class="canvas-container">
-            <canvas id="decisionBoundaryCanvas" width="600" height="380"></canvas>
-            <div class="canvas-overlay-tip">
-              <i data-lucide="mouse-pointer" style="width:12px; height:12px; display:inline-block; vertical-align:middle;"></i>
-              Click anywhere on the canvas to test live classification
-            </div>
-          </div>
-
-          <div class="sandbox-controls">
-            <div class="control-group">
-              <label class="control-label">Synthetic Dataset</label>
-              <div class="segmented-pills">
-                <button class="pill-btn dataset-btn active" data-dataset="moons">Moons</button>
-                <button class="pill-btn dataset-btn" data-dataset="circles">Circles</button>
-                <button class="pill-btn dataset-btn" data-dataset="linear">Linear</button>
-              </div>
-            </div>
-
-            <div class="control-group" style="margin-top:16px;">
-              <label class="control-label">ML Classifier Architecture</label>
-              <div class="segmented-pills">
-                <button class="pill-btn model-btn active" data-model="neural_net">Neural Net</button>
-                <button class="pill-btn model-btn" data-model="random_forest">Random Forest</button>
-                <button class="pill-btn model-btn" data-model="logistic">Logistic Reg</button>
-              </div>
-            </div>
-
-            <div class="sandbox-metrics-box" style="margin-top:18px;">
-              <div class="metric-mini accent-cyan">
-                <span>Model Accuracy</span>
-                <strong id="metricAccuracy">98.4%</strong>
-              </div>
-              <div class="metric-mini accent-emerald">
-                <span>Inference Latency</span>
-                <strong id="metricLatency">3.8 ms</strong>
-              </div>
-              <div class="metric-mini">
-                <span>Drift Status</span>
-                <strong style="color:var(--emerald);">HEALTHY</strong>
-              </div>
-              <div class="metric-mini">
-                <span>Active Replicas</span>
-                <strong id="metricReplicas">4 Pods (EKS)</strong>
-              </div>
-            </div>
-
-            <div class="control-group" style="margin-top:16px;">
-              <label class="control-label">Latest Point Prediction</label>
-              <div id="inferenceResultBadge" style="padding:10px 14px; background:rgba(255,255,255,0.04); border:1px solid var(--border-glass); border-radius:var(--radius-sm); font-family:var(--font-mono); font-size:0.8rem; color:var(--text-muted);">
-                Click canvas to classify coordinates (X₁, X₂)
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- DevOps & MLOps Pipeline Architecture Section -->
   <section id="architecture" class="arch-section">
     <div class="container">
@@ -384,14 +265,14 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
     </div>
   </section>
 
-  <!-- Featured Projects Section -->
+  <!-- Featured Projects Section (Accurately Mapped to Real GitHub Repositories) -->
   <section id="projects" class="projects-section">
     <div class="container">
       <div class="section-head">
         <span class="section-tag"><i data-lucide="folder-git-2" style="width:14px; height:14px; margin-right:4px;"></i> Portfolio Showcase</span>
-        <h2 class="section-title">Featured Production Projects</h2>
+        <h2 class="section-title">Featured Production Repositories</h2>
         <p class="section-subtitle">
-          Hands-on cloud infrastructure, GPU machine learning pipelines, and distributed microservices platforms.
+          Real, verified repositories actively maintained on GitHub spanning MLOps inference, cloud infrastructure, container security, and web applications.
         </p>
       </div>
 
@@ -399,18 +280,18 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
         <button class="filter-btn active" data-filter="all">All Projects</button>
         <button class="filter-btn" data-filter="mlops">MLOps &amp; AI</button>
         <button class="filter-btn" data-filter="devops">Cloud &amp; DevOps</button>
-        <button class="filter-btn" data-filter="fullstack">Microservices</button>
+        <button class="filter-btn" data-filter="security">Security &amp; Full-Stack</button>
       </div>
 
       <div class="projects-grid">
-        <!-- Project 1: NexusML -->
+        <!-- Project 1: aiml-infra-lab -->
         <article class="project-card glass-panel" data-category="mlops devops">
           <span class="project-badge-top">PRODUCTION MLOPS</span>
           <div class="project-card-header">
             <div class="project-icon-box">
               <i data-lucide="cpu"></i>
             </div>
-            <h3 class="project-title">NexusML &mdash; Production MLOps &amp; Infra Lab</h3>
+            <h3 class="project-title">AIML Infra Lab &mdash; Production MLOps Engine</h3>
             <p class="project-desc">
               End-to-end production AI/ML platform featuring continuous model training with 2D decision boundary meshes, a semantic vector engine with 2D SVD projections, real-time FastAPI inference engine, Prometheus metrics scrape exporter, Docker multi-stage containers, Kubernetes HPA horizontal pod autoscaling, and complete AWS ECS Fargate Terraform IaC.
             </p>
@@ -425,26 +306,22 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
           </div>
           <div class="project-footer">
             <div class="project-links">
-              <a href="https://github.com/itachi-rdy79/aiml-infra-lab" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <a href="https://github.com/itachi-rdy79/aiml-infra-lab" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color:var(--cyan);">
                 <i data-lucide="github" style="width:16px; height:16px;"></i>
-                <span>Source Code</span>
-              </a>
-              <a href="#mlops" class="project-link-btn" style="color:var(--cyan);">
-                <i data-lucide="play-circle" style="width:16px; height:16px;"></i>
-                <span>Live Interactive Sandbox</span>
+                <span>itachi-rdy79 / aiml-infra-lab</span>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Project 2: Terraform Zero to Hero -->
+        <!-- Project 2: terraform-zero-to-hero -->
         <article class="project-card glass-panel" data-category="devops">
           <span class="project-badge-top">CLOUD INFRASTRUCTURE</span>
           <div class="project-card-header">
             <div class="project-icon-box violet">
               <i data-lucide="cloud"></i>
             </div>
-            <h3 class="project-title">Terraform Zero to Hero &mdash; Enterprise AWS IaC</h3>
+            <h3 class="project-title">Terraform Zero to Hero &mdash; AWS IaC Suite</h3>
             <p class="project-desc">
               Comprehensive enterprise cloud infrastructure automation on AWS. Provisions multi-AZ VPC architectures, private/public subnets, NAT gateways, Auto Scaling Groups, HashiCorp Vault secrets integration, and robust remote state locking with S3 buckets and DynamoDB.
             </p>
@@ -459,80 +336,81 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
           </div>
           <div class="project-footer">
             <div class="project-links">
-              <a href="https://github.com/itachi-rdy79/terraform-zero-to-hero" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <a href="https://github.com/itachi-rdy79/terraform-zero-to-hero" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color:var(--violet);">
                 <i data-lucide="github" style="width:16px; height:16px;"></i>
-                <span>Source Code</span>
+                <span>itachi-rdy79 / terraform-zero-to-hero</span>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Project 3: Distributed Microservices (Gap Arcade) -->
-        <article class="project-card glass-panel" data-category="devops fullstack">
+        <!-- Project 3: tictactoe (GAP Arcade) -->
+        <article class="project-card glass-panel" data-category="devops">
           <span class="project-badge-top">DEVOPS &amp; RELIABILITY</span>
           <div class="project-card-header">
             <div class="project-icon-box emerald">
-              <i data-lucide="server"></i>
+              <i data-lucide="gamepad-2"></i>
             </div>
-            <h3 class="project-title">Distributed Microservices &amp; Concurrency Suite</h3>
+            <h3 class="project-title">GAP Arcade &mdash; Container Hardening &amp; DevOps</h3>
             <p class="project-desc">
-              High-concurrency containerized web application equipped with automated k6 load testing scripts (benchmarking 500+ virtual users), custom Nginx reverse proxy routing, Prometheus monitoring configuration, and Kubernetes manifests with zero-downtime rolling updates.
+              Production-grade web application platform equipped with complete 5-phase DevOps automation: non-root Docker container hardening (&lt; 25MB), automated GitHub Actions CI &amp; Trivy security scanning, AWS EC2 Terraform IaC, Kubernetes manifests with LoadBalancer, and k6 synthetic load testing.
             </p>
             <div class="project-tech-stack">
+              <span class="tech-tag">Docker (<25MB)</span>
               <span class="tech-tag">Kubernetes</span>
-              <span class="tech-tag">Docker Compose</span>
-              <span class="tech-tag">Nginx Reverse Proxy</span>
-              <span class="tech-tag">k6 Load Testing</span>
-              <span class="tech-tag">Prometheus</span>
+              <span class="tech-tag">GitHub Actions</span>
+              <span class="tech-tag">Trivy</span>
+              <span class="tech-tag">k6 Testing</span>
+              <span class="tech-tag">Nginx</span>
             </div>
           </div>
           <div class="project-footer">
             <div class="project-links">
-              <a href="https://github.com/itachi-rdy79/tictactoe" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <a href="https://github.com/itachi-rdy79/tictactoe" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color:var(--emerald);">
                 <i data-lucide="github" style="width:16px; height:16px;"></i>
-                <span>Source Code</span>
+                <span>itachi-rdy79 / tictactoe</span>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Project 4: AI Anomaly Detection -->
-        <article class="project-card glass-panel" data-category="mlops">
-          <span class="project-badge-top">AIOPS &amp; RELIABILITY</span>
+        <!-- Project 4: waph-team21.github.io -->
+        <article class="project-card glass-panel" data-category="security">
+          <span class="project-badge-top">SECURITY &amp; DEVSECOPS</span>
           <div class="project-card-header">
             <div class="project-icon-box">
-              <i data-lucide="activity"></i>
+              <i data-lucide="shield-alert"></i>
             </div>
-            <h3 class="project-title">AI-Driven Anomaly Detection &amp; AIOps Engine</h3>
+            <h3 class="project-title">WAPH &mdash; Web App Penetration &amp; Security Testing</h3>
             <p class="project-desc">
-              Predictive incident response architecture developed using Python, TensorFlow, and scikit-learn across 200+ microservices. Reduced MTTR by 32% by automatically identifying anomalous metric deviations and telemetry patterns before service degradation.
+              Security engineering and application defense suite developed at University of Cincinnati. Features vulnerability penetration testing, OWASP Top 10 mitigations, input sanitization, cross-site scripting (XSS) defense, and secure session management.
             </p>
             <div class="project-tech-stack">
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">Scikit-Learn</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">OpenTelemetry</span>
-              <span class="tech-tag">Prometheus</span>
+              <span class="tech-tag">AppSec</span>
+              <span class="tech-tag">Penetration Testing</span>
+              <span class="tech-tag">OWASP</span>
+              <span class="tech-tag">DevSecOps</span>
+              <span class="tech-tag">Univ. of Cincinnati</span>
             </div>
           </div>
           <div class="project-footer">
             <div class="project-links">
-              <span class="project-link-btn" style="color:var(--emerald); cursor:default;">
-                <i data-lucide="check-circle" style="width:16px; height:16px;"></i>
-                <span>Production Proven (Shopify)</span>
-              </span>
+              <a href="https://github.com/itachi-rdy79/waph-team21.github.io" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color:var(--cyan);">
+                <i data-lucide="github" style="width:16px; height:16px;"></i>
+                <span>itachi-rdy79 / waph-team21.github.io</span>
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- Project 5: Supplement & Bio-Metric Analytics -->
-        <article class="project-card glass-panel" data-category="fullstack">
-          <span class="project-badge-top">FULL-STACK DATA</span>
+        <!-- Project 5: supplement-tracker -->
+        <article class="project-card glass-panel" data-category="security">
+          <span class="project-badge-top">DATA APPLICATION</span>
           <div class="project-card-header">
             <div class="project-icon-box violet">
-              <i data-lucide="bar-chart-3"></i>
+              <i data-lucide="activity"></i>
             </div>
-            <h3 class="project-title">Bio-Metric Analytics &amp; Regimen Intelligence</h3>
+            <h3 class="project-title">Supplement Tracker &mdash; Daily Health Intelligence</h3>
             <p class="project-desc">
               Health analytics and schedule optimization platform built to calculate nutrient synergies, manage dosage compliance, and visualize wellness metrics through responsive charting.
             </p>
@@ -545,9 +423,9 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
           </div>
           <div class="project-footer">
             <div class="project-links">
-              <a href="https://github.com/itachi-rdy79/supplement-tracker" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <a href="https://github.com/itachi-rdy79/supplement-tracker" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color:var(--violet);">
                 <i data-lucide="github" style="width:16px; height:16px;"></i>
-                <span>Source Code</span>
+                <span>itachi-rdy79 / supplement-tracker</span>
               </a>
             </div>
           </div>
@@ -712,9 +590,9 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
         </p>
 
         <div class="contact-pills">
-          <a href="mailto:lokeshreddych129@gmail.com" class="contact-pill" id="emailPill">
+          <a href="mailto:purnalokesh79@gmail.com" class="contact-pill" id="emailPill">
             <i data-lucide="mail" style="color:var(--cyan); width:18px; height:18px;"></i>
-            <span>lokeshreddych129@gmail.com</span>
+            <span>purnalokesh79@gmail.com</span>
           </a>
 
           <button id="copyEmailBtn" class="contact-pill" style="cursor:pointer; background:rgba(0,240,255,0.08); border-color:var(--border-liquid-cyan);">
@@ -753,21 +631,21 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
       <i data-lucide="briefcase" style="width:18px; height:18px;"></i>
       <span class="dock-tooltip">Experience</span>
     </a>
-    <a href="#cluster" class="dock-item" aria-label="EKS Cluster Topology">
-      <i data-lucide="network" style="width:18px; height:18px;"></i>
-      <span class="dock-tooltip">EKS Cluster</span>
-    </a>
-    <a href="#mlops" class="dock-item" aria-label="MLOps Decision Sandbox">
-      <i data-lucide="cpu" style="width:18px; height:18px;"></i>
-      <span class="dock-tooltip">MLOps Sandbox</span>
-    </a>
     <a href="#architecture" class="dock-item" aria-label="Pipeline Architecture">
       <i data-lucide="git-branch" style="width:18px; height:18px;"></i>
-      <span class="dock-tooltip">Pipeline Architecture</span>
+      <span class="dock-tooltip">Architecture</span>
     </a>
     <a href="#projects" class="dock-item" aria-label="Featured Projects">
       <i data-lucide="layers" style="width:18px; height:18px;"></i>
       <span class="dock-tooltip">Projects</span>
+    </a>
+    <a href="#skills" class="dock-item" aria-label="Technical Skills">
+      <i data-lucide="code-2" style="width:18px; height:18px;"></i>
+      <span class="dock-tooltip">Skills</span>
+    </a>
+    <a href="#education" class="dock-item" aria-label="Education">
+      <i data-lucide="graduation-cap" style="width:18px; height:18px;"></i>
+      <span class="dock-tooltip">Education</span>
     </a>
     <a href="#terminal" class="dock-item" aria-label="CLI Terminal">
       <i data-lucide="terminal" style="width:18px; height:18px;"></i>
@@ -782,7 +660,7 @@ Contact:  lokeshreddych129@gmail.com | 513-578-3720
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Purna Lokesh Reddy. DevOps Engineer (AI &amp; ML) &bull; Cincinnati, OH.</p>
+      <p>&copy; 2026 Purna Lokesh Reddy. DevOps Engineer (AI &amp; ML) &bull; Cincinnati, OH &bull; <a href="mailto:purnalokesh79@gmail.com" style="color:var(--text-muted); text-decoration:none;">purnalokesh79@gmail.com</a></p>
     </div>
   </footer>
 
