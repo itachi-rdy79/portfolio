@@ -1,8 +1,8 @@
-# Purna Lokesh Reddy &mdash; DevOps Engineer (AI & ML) Portfolio
+# Purna Lokesh Reddy &mdash; DevOps & MLOps Workstation (Liquid Glass UI)
 
-Welcome to the engineering portfolio of **Purna Lokesh Reddy** (`itachi-rdy79`), DevOps Engineer (AI & ML) based in **Cincinnati, OH**.
+Welcome to the engineering portfolio and interactive workstation of **Purna Lokesh Reddy** (`itachi-rdy79`), DevOps Engineer (AI & ML) based in **Cincinnati, OH**.
 
-This portfolio is an interactive workstation featuring an in-browser Linux/DevOps terminal simulator, a real-time mathematical decision boundary machine learning sandbox, an automated DevSecOps/MLOps pipeline architecture visualizer, verified enterprise work history (Shopify, Uber), and direct links to open-source infrastructure projects.
+This portfolio features an ultra-modern **Liquid Glass (Glassmorphism 2.0)** visual aesthetic with an ambient fluid shader canvas, a floating VisionOS bottom quick-dock, an interactive multi-region AWS EKS & GPU cluster topology visualizer, a mathematical 2D decision boundary MLOps sandbox, an in-browser Linux CLI terminal, and verified enterprise experience (Shopify, Uber, University of Cincinnati).
 
 ---
 
@@ -17,47 +17,35 @@ This portfolio is an interactive workstation featuring an in-browser Linux/DevOp
 
 ---
 
-## Proven Enterprise Experience
+## Liquid Glass Aesthetic & Core Features
 
-### 1. Shopify &mdash; DevOps Engineer (AI & ML)
-*Remote (USA) | August 2024 &ndash; Present*
-- Engineered and maintained multi-region **AWS EKS** infrastructure using **Terraform, Helm, and Ansible**, achieving **99.97% uptime** across high-traffic production environments, including Black Friday and flash-sale events.
-- Optimized GPU-based ML inference workloads on **AWS SageMaker, Kubernetes, and NVIDIA A10G nodes**, reducing **P99 latency by 24%** for recommendation systems handling **5M+ daily requests**.
-- Integrated DevSecOps pipelines using **GitHub Actions, Trivy, and Open Policy Agent (OPA)**, enforcing **SOC 2** compliance and preventing non-compliant container deployments.
-- Developed AI-driven anomaly detection systems using **Python, TensorFlow, and scikit-learn** across 200+ microservices, reducing **MTTR by 32%**.
-- Built observability and FinOps dashboards with **Prometheus, Grafana, and AWS CloudWatch**, monitoring SLIs/SLOs, GPU utilization, and cloud spend, identifying **$180K+ annual savings**.
-- Tuned **PostgreSQL (AWS RDS)** and **Redis (ElastiCache)** using PgBouncer, read replicas, and failover automation, reducing query latency by 28% with zero downtime.
-- Automated Kubernetes autoscaling, GitOps workflows, and infrastructure provisioning using **ArgoCD, Helm, and Terraform**.
+### 1. Ambient Liquid Fluid Canvas
+- Organic, shimmering neon fluid gradient orbs (`#00f0ff`, `#8a2be2`, `#10b981`) running on a 60 FPS lightweight background canvas that gently drift and react to mouse movement beneath frosted glass surfaces.
 
-### 2. Uber &mdash; DevOps Engineer
-*India | August 2020 &ndash; July 2023*
-- Managed AWS cloud infrastructure and Kubernetes (Amazon EKS) environments supporting **300+ microservices**, ensuring **99.95% service availability** for large-scale rider and driver platforms.
-- Automated infrastructure provisioning using **Terraform and AWS CloudFormation**, reducing manual deployment effort by **60%** and eliminating configuration drift across environments.
-- Led migration of **15+ legacy applications to Kubernetes**, developing Helm charts, configuring Horizontal Pod Autoscaler (HPA), and optimizing CPU/memory utilization, reducing **EC2 costs by 28%**.
-- Designed and optimized CI/CD pipelines using **Jenkins and GitLab CI/CD**, integrating automated testing, security scanning, and deployment validation with minimal rollback rates.
-- Implemented centralized observability and monitoring using **Prometheus, Grafana, ELK Stack, and AWS CloudWatch** across 50+ production services.
-- Strengthened DevSecOps and GitOps practices using **Trivy, ArgoCD, Kubernetes RBAC**, and policy enforcement.
+### 2. Floating VisionOS Bottom Quick-Dock
+- Floating glass dock fixed at the bottom with quick jump actions:
+  - **Overview**, **Experience**, **EKS Cluster Topology**, **MLOps Sandbox**, **Pipeline Architecture**, **Projects**, **Terminal CLI**, and **Resume PDF**.
 
----
+### 3. Interactive AWS EKS & GPU Cluster Topology Visualizer
+- Visual multi-region Kubernetes cluster (`us-east-1` &bull; `us-west-2`).
+- Interactive **GPU Node Autoscaling Slider** (1 to 8 NVIDIA A10G instances) that dynamically recalculates:
+  - **P99 Recommendation Latency**: drops in real-time from 42ms down to 11.5ms.
+  - **Active Pod Replicas**: scales dynamically from 4 to 32 pods.
+  - **FinOps Hourly Cost**: modeled in real time.
 
-## Core Technical Competencies
+### 4. Interactive MLOps Decision Boundary Sandbox
+- Real-time HTML5 Canvas visualizer rendering mathematical 2D classification decision boundaries across **Moons**, **Circles**, and **Linear** datasets with **Neural Network**, **Random Forest**, and **Logistic Regression** classifiers.
+- Point-and-click inference with live confidence calculations and sub-5ms latency gauges.
 
-- **Cloud & Infrastructure**: AWS (EKS, EC2, S3, RDS, Lambda, SageMaker, IAM, CloudWatch, Auto Scaling, ElastiCache)
-- **Infrastructure as Code & Automation**: Terraform, AWS CloudFormation, Ansible, Bash, Shell Scripting
-- **Containers & Orchestration**: Docker, Kubernetes (EKS), Helm, ArgoCD, RBAC, Horizontal Pod Autoscaler (HPA), Node Group Scaling
-- **CI/CD & DevSecOps**: GitHub Actions, Jenkins, GitLab CI/CD, AWS CodePipeline, Trivy, Open Policy Agent (OPA), SOC 2, PCI-DSS
-- **MLOps & AI Systems**: AWS SageMaker, NVIDIA GPU Infrastructure (A10G), ML Inference Latency Optimization, TensorFlow, Scikit-learn, FastAPI
-- **Observability & Reliability**: Prometheus, Grafana, ELK Stack, OpenTelemetry, PagerDuty, SLI/SLO Monitoring, FinOps, k6 Load Testing
-- **Databases & Messaging**: PostgreSQL (RDS), Redis (ElastiCache), MySQL, Apache Kafka, PgBouncer
+### 5. In-Browser Linux DevOps Terminal (`devops-cli`)
+- Interactive shell supporting:
+  - `whoami`, `cat resume`, `terraform plan`, `kubectl get pods -A`, `eks scale <1-8>`, `docker ps`, `nexusml status`, `curl /metrics`, `contact`, and `clear`.
 
----
-
-## Interactive Features
-
-1. **Interactive DevOps CLI Terminal (`devops-cli`)**: Executable commands including `help`, `cat resume`, `terraform plan`, `kubectl get pods -A`, `docker ps`, `nexusml status`, `curl /metrics`, and `contact`.
-2. **Interactive MLOps Decision Boundary Sandbox**: Real-time canvas visualizer rendering mathematical 2D classification decision boundaries across Moons, Circles, and Linear datasets with point-and-click inference latency testing.
-3. **Automated Pipeline Lifecycle Architecture**: Visual flowchart tracing code commit through security gating, containerization, GitOps EKS deployment, and telemetry.
-4. **Embedded PDF Resume Viewer**: Instant in-browser inspection and download of the complete resume PDF.
+### 6. Proven Enterprise Experience
+- **Shopify &mdash; DevOps Engineer (AI & ML)** [Remote USA] (August 2024 &ndash; Present)
+  - Multi-region AWS EKS (99.97% uptime), GPU SageMaker A10G inference optimization (P99 latency -24%), DevSecOps Trivy/OPA SOC 2, TensorFlow/scikit-learn anomaly detection (MTTR -32%), $180K+ FinOps savings, PgBouncer/RDS/Redis tuning, and ArgoCD GitOps.
+- **Uber &mdash; DevOps Engineer** [India] (August 2020 &ndash; July 2023)
+  - Managed AWS EKS across 300+ microservices (99.95% availability), automated provisioning with Terraform/CloudFormation (60% effort reduction), migrated 15+ apps to K8s (28% EC2 savings), Jenkins/GitLab CI/CD, and centralized Prometheus/Grafana observability.
 
 ---
 
@@ -67,10 +55,10 @@ This portfolio is an interactive workstation featuring an in-browser Linux/DevOp
 git clone https://github.com/itachi-rdy79/portfolio.git
 cd portfolio
 
-# Static server options:
+# Run with any static server:
 npx serve .
 # or
 python -m http.server 3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the application.
+Open [http://localhost:3000](http://localhost:3000) to explore the workstation.
